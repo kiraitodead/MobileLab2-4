@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style = "@style/contentLinearLayoutStyle"
+    tools:context=".ContentRecipeActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5A5A5A">
+
+        <LinearLayout
+            style = "@style/contentLinearLayoutStyle"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textName"
+                style = "@style/titleTextStyle"
+                />
+
+            <androidx.cardview.widget.CardView
+                style = "@style/contentCardViewStyle">
+
+                <ImageView
+                    android:id = "@+id/photoDishes"
+                    style = "@style/contentImageStyle" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style = "@style/titleTextStyle"
+                android:text="@string/recipe"
+                />
+
+            <TextView
+                android:id="@+id/textRecipies"
+                style = "@style/commonTextStyle" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
